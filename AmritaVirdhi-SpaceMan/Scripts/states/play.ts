@@ -26,6 +26,7 @@
             scoreboard.update();
             stage.update();
 
+            
         }
 
 

@@ -4,7 +4,6 @@
 /// <reference path="typings/soundjs/soundjs.d.ts" />
 /// <reference path="typings/preloadjs/preloadjs.d.ts" />
 
-/// <reference path="utility/utility.ts" />
 /// <reference path="managers/asset.ts" />
 
 /// <reference path="objects/gameobject.ts" />
@@ -15,7 +14,7 @@
 /// <reference path="objects/scoreboard.ts" />
 /// <reference path="managers/collision.ts" />
 /// <reference path="objects/colliding.ts" />
-/// <reference path="constants.ts" />
+/// <reference path="utility/constants.ts" />
 
 /// <reference path="states/play.ts" />
 /// <reference path="objects/button.ts" />

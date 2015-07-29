@@ -1,4 +1,4 @@
-﻿var managers;
+var managers;
 (function (managers) {
     var Assets = (function () {
         //constructor

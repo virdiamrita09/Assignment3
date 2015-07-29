@@ -1,4 +1,4 @@
-﻿var states;
+var states;
 (function (states) {
     //class defining play state
     var Play = (function () {
@@ -32,7 +32,6 @@
             game.addChild(superman);
             //add colliding to the stage
             colliding = new objects.Colliding(assets.loader.getResult("colliding"));
-            // add 3 fireballs objects to stage
             for (var ball = 0; ball < 3; ball++) {
                 fireballs[ball] = new objects.Fireball(assets.loader.getResult("fireball"));
                 game.addChild(fireballs[ball]);
