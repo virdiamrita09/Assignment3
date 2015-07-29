@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9262F26C-1BCB-4172-B652-0D6D9C943383}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AmritaVirdhi_SpaceMan</RootNamespace>
+    <AssemblyName>AmritaVirdhi-SpaceMan</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TypeScriptToolsVersion>1.4</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\audio\clicked.ogg" />
+    <Content Include="assets\audio\engine.ogg" />
+    <Content Include="assets\audio\kaboom.ogg" />
+    <Content Include="assets\audio\supermansound.ogg" />
+    <Content Include="assets\audio\thunder.ogg" />
+    <Content Include="assets\audio\yay.ogg" />
+    <Content Include="assets\images\Thumbs.db" />
+    <Content Include="Scripts\managers\assets.js.map" />
+    <Content Include="Scripts\managers\collision.js.map" />
+    <Content Include="Scripts\objects\button.js.map" />
+    <Content Include="Scripts\objects\city.js.map" />
+    <Content Include="Scripts\objects\colliding.js.map" />
+    <Content Include="Scripts\objects\fireball.js.map" />
+    <Content Include="Scripts\objects\gameobject.js.map" />
+    <Content Include="Scripts\objects\ring.js.map" />
+    <Content Include="Scripts\objects\scoreboard.js.map" />
+    <Content Include="Scripts\objects\superman.js.map" />
+    <Content Include="Scripts\states\gameover.js.map" />
+    <Content Include="Scripts\states\menu.js.map" />
+    <Content Include="Scripts\states\play.js.map" />
+    <Content Include="Scripts\utility\constants.js.map" />
+    <Content Include="Scripts\utility\game.js.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\audio\clicked.wav" />
+    <Content Include="assets\audio\destroy.wav" />
+    <Content Include="assets\audio\kaboom.wav" />
+    <Content Include="assets\audio\pickupcoin.wav" />
+    <Content Include="assets\audio\score.wav" />
+    <Content Include="assets\audio\supermansound.wma" />
+    <Content Include="assets\images\baground.png" />
+    <Content Include="assets\images\baground2.png" />
+    <Content Include="assets\images\colliding.png" />
+    <Content Include="assets\images\enemy.png" />
+    <Content Include="assets\images\gameover.png" />
+    <Content Include="assets\images\mainbaground.png" />
+    <Content Include="assets\images\menu.png" />
+    <Content Include="assets\images\playagain.png" />
+    <Content Include="assets\images\ring.png" />
+    <Content Include="assets\images\startbutton.png" />
+    <Content Include="assets\images\superman.png" />
+    <Content Include="index.html" />
+    <Content Include="Scripts\lib\easeljs-0.8.0.min.js" />
+    <Content Include="Scripts\lib\preloadjs-0.6.0.min.js" />
+    <Content Include="Scripts\lib\soundjs-0.6.0.min.js" />
+    <Content Include="Scripts\lib\Stats.js" />
+    <Content Include="Scripts\lib\tweenjs-0.6.0.min.js" />
+    <Content Include="Scripts\managers\asset.js" />
+    <Content Include="Scripts\managers\collisions.js" />
+    <Content Include="Scripts\objects\button.js" />
+    <Content Include="Scripts\objects\city.js" />
+    <Content Include="Scripts\objects\colliding.js" />
+    <Content Include="Scripts\objects\fireball.js" />
+    <Content Include="Scripts\objects\gameobject.js" />
+    <Content Include="Scripts\objects\ring.js" />
+    <Content Include="Scripts\objects\scoreboard.js" />
+    <Content Include="Scripts\objects\superman.js" />
+    <Content Include="Scripts\states\gameover.js" />
+    <Content Include="Scripts\states\menu.js" />
+    <Content Include="Scripts\states\play.js" />
+    <Content Include="Scripts\utility\constants.js" />
+    <Content Include="Scripts\utility\game.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="game.ts" />
+    <TypeScriptCompile Include="Scripts\managers\asset.ts" />
+    <TypeScriptCompile Include="Scripts\managers\collision.ts" />
+    <TypeScriptCompile Include="Scripts\objects\button.ts" />
+    <TypeScriptCompile Include="Scripts\objects\city.ts" />
+    <TypeScriptCompile Include="Scripts\objects\cloud.ts" />
+    <TypeScriptCompile Include="Scripts\objects\colliding.ts" />
+    <TypeScriptCompile Include="Scripts\objects\fireball.ts" />
+    <TypeScriptCompile Include="Scripts\objects\gameobject.ts" />
+    <TypeScriptCompile Include="Scripts\objects\plane.ts" />
+    <TypeScriptCompile Include="Scripts\objects\ring.ts" />
+    <TypeScriptCompile Include="Scripts\objects\scoreboard.ts" />
+    <TypeScriptCompile Include="Scripts\objects\superman.ts" />
+    <TypeScriptCompile Include="Scripts\states\gameover.ts" />
+    <TypeScriptCompile Include="Scripts\states\menu.ts" />
+    <TypeScriptCompile Include="Scripts\states\play.ts" />
+    <TypeScriptCompile Include="Scripts\typings\createjs-lib\createjs-lib.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\easeljs\easeljs.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\preloadjs\preloadjs.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\soundjs\soundjs.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\stats\stats.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\tweenjs\tweenjs.d.ts" />
+    <TypeScriptCompile Include="Scripts\utility\constants.ts" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>36278</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:34908/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
